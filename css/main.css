@@ -1,13 +1,32 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	font-size: 100%;
+	height:100%;
 }
 
 body {
+	background-image: 
+	linear-gradient(
+		rgba(0,0,0, 0.5),
+		rgba(0,0,0,0.5)
+	),
+	url('../images/Driver.jpg');
+	
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 
+nav {
+	display: block;
 }
 
 .container {
-
+	max-width: 100%;
+	box-sizing: border-box;
 }
 
 .container .contain-flex {
@@ -15,20 +34,132 @@ body {
 }
 
 
+/* nav properties */
+
+.top-nav, .top-nav ul,
+.top-nav ul li, .top-nav ul li a {
+	margin:0;
+	padding: 0;
+}
+
 .top-nav {
-	display: flex;
+	background-color: #000000;
+	opacity: 0.5;
+	width: 100%;
+	height: 110px;
 }
 
 
 .top-nav ul {
+	width:100%;
+	height:110px;
 	list-style: none;
+	display: inline-flex;
 }
 
 .top-nav ul li {
-	
+	height: 110px;
 }
 
 
 .top-nav ul li a {
+	color: #FFFFFF;
+	font-weight: bolder;
+	text-decoration: none;
+	line-height: 110px;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;.
+}
+
+.top-nav ul li:first-child a {
+	padding-left: 1.3em;
+}
+
+.link1 {
+	width:60%;
+	margin-left: 1.2em;
+	font-size: 2em;
+}
+
+.link2 {
+	width: 20%;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+.link3 {
+	width: 20%;
+	text-align: center;
+	font-size: 1.4em;
+}
+
+
+#brand-link {
 	
+}
+
+#signup-link {
+	
+}
+
+#login-link {
+
+}
+
+
+
+.content {
+
+}
+
+.content h1 {
+	font-family: Geneva, Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	color:#fff;
+	text-align: center;
+	margin-top: 14%;
+}
+
+.content h3 {
+	font-family: Geneva, Verdana, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+	color: #fff;
+	text-align: center;
+}
+
+
+.btn-group {
+	width:100%;
+	display: flex;
+	justify-content: center;
+	margin-top:5%;
+}
+
+button.learn-more {
+	background-color: #1F4565;
+	color: #fff;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	border:none;
+	padding: 12px;
+	margin-right: 10px;
+}
+
+button.download-app {
+	background-color: #fff;	
+	color: #1F4565;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	border:none;
+	padding: 12px;
+	margin-left: 10px;
+}
+
+button.learn-more:hover {
+	background-color: #fff;	
+	color: #1F4565;
+}
+
+button.download-app:hover {
+	background-color: #1F4565;
+	color: #fff;
 }
